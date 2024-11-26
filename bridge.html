@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Exam Results</title>
+    <link rel="stylesheet" href="bridge.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tab-menu">
+            <button class="tab-btn active" onclick="openTab('primary')">Primary Level</button>
+            <button class="tab-btn" onclick="openTab('advanced')">Advanced Level</button>
+        </div>
+
+        <h1 id="examTitle">ENTER YOUR EXAM RESULTS</h1>
+
+        <div class="input-section">
+            <label for="indexNumber">ENTER INDEX NUMBER</label>
+            <input type="text" id="indexNumber" placeholder="Enter your index number">
+            <button onclick="fetchResults()">Check Results</button>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <p><strong>School:</strong> <span id="schoolName"></span></p>
+            <p><strong>Result:</strong> <span id="resultScore"></span></p>
+            <button id="denyBtn" onclick="goToSchoolWebsite()">denyBtn</button>
+        </div>
+    </div>
+
+    <script>
+        let currentTab = 'primary'; // Track the current tab
+
+        function openTab(tabName) {
+            currentTab = tabName;
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(button => button.classList.remove('active'));
+            document.querySelector(`[onclick="openTab('${tabName}')"]`).classList.add('active');
+            const examTitle = document.getElementById('examTitle');
+            examTitle.textContent = tabName === 'primary' 
+                ? 'ENTER YOUR PRIMARY EXAM RESULTS' 
+                : 'ENTER YOUR ADVANCED EXAM RESULTS';
+            document.getElementById('results').classList.add('hidden');
+        }
+
+        async function fetchResults() {
+            const indexNumber = document.getElementById('indexNumber').value;
+            if (indexNumber) {
+                try {
+                    const response = await fetch(`http://localhost:3000/results?index=${indexNumber}&level=${currentTab}`);
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    const data = await response.json();
+                    if (data.success) {
+                        document.getElementById('results').classList.remove('hidden');
+                        document.getElementById('schoolName').textContent = data.school;
+                        document.getElementById('resultScore').textContent = data.result;
+                    } else {
+                        alert(data.message);
+                    }
+                } catch (error) {
+                    alert("An error occurred: " + error.message);
+                }
+            } else {
+                alert("Please enter a valid index number.");
+            }
+        }
+
+        function goToSchoolWebsite() {
+            const schoolName = document.getElementById('schoolName').textContent;
+            let schoolWebsite;
+            // Example: Map school names to URLs
+            if (schoolName === "School A") {
+                schoolWebsite = "http://schoolAwebsite.com"; // Replace with actual URL
+            } else if (schoolName === "School B") {
+                schoolWebsite = "http://schoolBwebsite.com"; // Replace with actual URL
+            } else {
+                alert("School website not found.");
+                return;
+            }
+            window.location.href = schoolWebsite; // Navigate to the school website
+        }
+    </script>
+</body>
+</html>

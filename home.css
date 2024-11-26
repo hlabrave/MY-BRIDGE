@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    
+}
+.navbar{
+    color: #fff;
+}
+nav {
+    background-color:#0b86b6;
+    padding: 20px;
+    
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color:black; /* Change color on hover */
+}
+.title {
+    margin: 10px 0;
+    font-size: 7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+}
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: aliceblue;
+    
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease;
+}
+.slides img {
+    min-width: 100%;
+    height: 100vh;
+    object-fit:cover; /* Make images cover the background */
+}

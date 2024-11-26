@@ -1,0 +1,625 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Navigation Bar Styling */
+.navbar{
+    color: #fff;
+}
+nav {
+    background-color:#0b86b6;
+    padding: 20px;
+    
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color:black; /* Change color on hover */
+}
+
+/* Special styling for the login button */
+.login-btn {
+    background-color: #53b8d1; /* Lighter blue for login */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #61a8c4; /* Darker blue on hover */
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: url('another.PNG') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 10px;
+}
+
+.hero h2 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #dddddd;
+}
+
+/* Features Section */
+.features {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #555;
+}
+/*IMAGES */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Make sure the image stays behind the text */
+}
+
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Add an overlay to make text readable */
+    color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.about-overlay h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.about-overlay p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* What We Bring To You Section */
+.benefits {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0b86b6;
+}
+
+.benefit-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefit-cards .card {
+    background-color: #e0eafc;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 30%;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-cards .card:hover {
+    background-color: #c0d4f7;
+    transition: background-color 0.3s ease;
+}
+
+.benefit-cards h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.benefit-cards p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+/*hovering*/
+.feature-box {
+    background-color: #0b86b6;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box:hover {
+    background-color: #8cd9ec;  /* Background color changes on hover */
+    transform: translateY(-10px); /* Adds a slight lift effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+}
+/*contact*/
+/* General Body and Section Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#contact {
+    position: relative;
+    background-image: url('Capture5.PNG'); /* Background image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full viewport width */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 50, 0.7); /* Dark overlay to make content stand out */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%; /* Adjust width of overlay */
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    color: #ddd;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: row; /* Align input and button horizontally */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 60%; /* Adjust width of input */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+button {
+    background-color: #0b86b6; /* Orange background for the submit button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0b86b6; /* Hover effect to make the button darker */
+}
+/* Mission and Vision Section */
+.mission-vision {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.mission-vision h2 {
+    font-size: 2.5rem;
+    color: #0b86b6;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.mission-vision h2::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #8ad1e2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.mission-vision p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+/* Animated Fade-in for each paragraph */
+.mission-vision p {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.mission-vision p:nth-child(2) { /* First paragraph */
+    animation-delay: 0.5s;
+}
+
+.mission-vision p:nth-child(3) { /* Second paragraph */
+    animation-delay: 1s;
+}
+
+.mission-vision p:nth-child(4) { /* Third paragraph */
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Decorative border for the section */
+.mission-vision {
+    border-top: 5px solid #0b86b6;
+    border-bottom: 5px solid #0b86b6;
+    border-radius: 8px;
+}
+/* Features Section */
+.features {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0b86b6;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-box:hover {
+    background-color: #f0ddca; /* Light cream color on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    color: #0b86b6;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #555;
+}
+/* Contact Section */
+#contact {
+    position: relative;
+    background-image: url('Capture5.PNG'); /* Background image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full viewport width */
+    padding: 40px 20px;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0b86b6;
+}
+
+#contact p {
+    color: #ddd;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #0b86b6;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    outline: none;
+    color: #333;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+}
+
+button {
+    background-color: #0b86b6;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0b86b6; /* Darker orange on hover */
+    transform: translateY(-3px); /* Adds a lift effect */
+}
+/*responiveness for my contact*/
+/* Contact Section */
+#contact {
+    background-image: url('pictures/Capture5.PNG'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #0b86b6;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    color: #ddd;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #0b86b6;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+}
+
+button {
+    background-color: #0b86b6;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #d48a00;
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    #contact {
+        height: auto; /* Allows section to adjust based on content height */
+        padding: 30px 10px;
+    }
+    .overlay {
+        width: 90%;
+        padding: 30px;
+    }
+    #contact h2 {
+        font-size: 2rem;
+    }
+    #contact p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #contact h2 {
+        font-size: 1.8rem;
+    }
+    #contact p {
+        font-size: 0.9rem;
+    }
+    .overlay {
+        padding: 20px;
+    }
+    input[type="text"] {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+}
+/* Footer */
+footer {
+    background-color: #0b86b6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

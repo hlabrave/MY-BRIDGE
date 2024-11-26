@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Choice</title>
+    <link rel="stylesheet" href="shcools.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about1.html">About Us</a>
+        <a href="bridge.html">Results</a>
+        <a href="schools.html">schools choices</a>
+        <a href="login.html">Login</a>
+        <a href="contact page.html">Contact Us</a>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Choose Your Ideal School</h2>
+            <p>Select a school that matches your needs and aspirations for a brighter future.</p>
+        </div>
+    </section>
+
+    <!-- Filter Schools Section -->
+    <section class="filter">
+        <h2>Filter Schools</h2>
+        <select id="location-filter">
+            <option value="all">All Locations</option>
+            <option value="Bugesera">Bugesera</option>
+            <option value="Gasabo">Gasabo</option>
+            <option value="Kicukiro">Kicukiro</option>
+            <option value="Nyarugenge">Nyarugenge</option>
+            <option value="Rwamagana">Rwamagana</option>
+            <option value="Nyagatare">Nyagatare</option>
+            <option value="Huye">Huye</option>
+        </select>
+    </section>
+
+    <!-- School Cards Section -->
+    <section class="school-cards" id="school-choice">
+        <h2>Our Partner Schools</h2>
+        <div class="cards-container">
+            <div class="school-card" data-location="Bugesera">
+                <h3>Maranyundo Girls' School</h3>
+                <p>Location: Bugesera District</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Gasabo">
+                <h3>Kagarama Secondary School</h3>
+                <p>Location: Gasabo</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Kicukiro">
+                <h3>GS St Bernadette</h3>
+                <p>Location: Kicukiro</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Nyarugenge">
+                <h3>Lycée Notre Dame de Cîteaux</h3>
+                <p>Location: Nyarugenge</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Gasabo">
+                <h3>Glory Academy</h3>
+                <p>Location: Gasabo</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Nyarugenge">
+                <h3>College St André</h3>
+                <p>Location: Nyarugenge</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Rwamagana">
+                <h3>Cornerstone Leadership Academy</h3>
+                <p>Location: Rwamagana District</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Bugesera">
+                <h3>Gashora Girls' School</h3>
+                <p>Location: Bugesera District</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Nyagatare">
+                <h3>Maryhill Girls' Secondary School</h3>
+                <p>Location: Nyagatare District</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Nyanza">
+                <h3>GS. Mater Dei</h3>
+                <p>Location: Nyanza District</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Huye">
+                <h3>ENDP Karubanda</h3>
+                <p>Location: Huye District</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+
+            <div class="school-card" data-location="Gasabo">
+                <h3>Fawe Girls' School</h3>
+                <p>Location: Gasabo District</p>
+                <button class="school-btn">Choose This School</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 MY BRIDGE. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+     // Filter function for schools based on location
+const locationFilter = document.getElementById("location-filter");
+const schoolCards = document.querySelectorAll(".school-card");
+
+locationFilter.addEventListener("change", function() {
+    const selectedLocation = this.value;
+
+    schoolCards.forEach(card => {
+        const cardLocation = card.getAttribute("data-location");
+        if (selectedLocation === "all" || cardLocation === selectedLocation) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+
+// Simulate selection of a school
+const schoolButtons = document.querySelectorAll(".school-btn");
+
+schoolButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        alert("You have selected: " + this.parentElement.querySelector("h3").innerText);
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F3F4; /* Light Gray */
+    color: #2835e7; /* Blue light */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(85, 96, 245, 0.342);
+    text-align: center;
+}
+
+/* Tab Menu */
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #4542f5; /* Sky Blue active */
+    border: 1px solid #3c57f0; /*  Sky Blue active */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white; /* White text */
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #5464f5; /* Sky Blue active */
+    border: 1px solid #6278f5; /* Sky Blue border */
+}
+
+h1 {
+    font-size: 24px;
+    color: #2b51fa; /*  Sky Blue active */
+}
+
+.input-section {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3935f3; /*  Sky Blue active */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0; /* Added margin for spacing */
+}
+
+button:hover {
+    background-color: #2069f1; /* Sky Blue active */
+}
+
+.hidden {
+    display: none;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #3a63eb; /*  Sky Blue active */
+    border-radius: 4px;
+    background-color: #FFF8E1; /*  Sky Blue active */
+}
+
+/* Deny Button */
+#denyBtn {
+    background-color: #258beb; /*  Sky Blue active */
+    transition: background-color 0.3s ease;
+}
+
+#denyBtn:hover {
+    background-color: #2e61ee; /* Darker Red for hover */
+}
+
+/* Focus styles */
+input:focus {
+    border-color: #1e61f3; /* Coral */
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 71, 235, 0.5); /* Sky Blue active */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(44, 110, 231, 0.5); /* Sky Blue active */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+
+    .tab-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+}
